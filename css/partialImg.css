@@ -1,37 +1,37 @@
 #haven1{
-	background-image: url("/images/p2/haven_home1.png");
+	background-image: url("../images/p2/haven_home1.png");
 }
 
 #haven2{
-	background-image: url("/images/p2/haven_home2.png");
+	background-image: url("../images/p2/haven_home2.png");
 }
 
 #haven3{
-	background-image: url("/images/p2/haven_search.png");
+	background-image: url("../images/p2/haven_search.png");
 }
 
 #haven4{
-	background-image: url("/images/p2/haven_reserve.png");
+	background-image: url("../images/p2/haven_reserve.png");
 }
 
 #haven5{
-	background-image: url("/images/p2/haven_confirm.png");
+	background-image: url("../images/p2/haven_confirm.png");
 	margin-bottom: 2em;
 }
 
 #pkp1{
-	background-image: url("/images/p4/pkp1.png");
+	background-image: url("../images/p4/pkp1.png");
 }
 
 #pkp2{
-	background-image: url("/images/p4/pkp2.png");
+	background-image: url("../images/p4/pkp2.png");
 }
 
 #pkp3{
-	background-image: url("/images/p4/pkp3.png");
+	background-image: url("../images/p4/pkp3.png");
 }
 
 #pkp4{
-	background-image: url("/images/p4/pkp4.png");
+	background-image: url("../images/p4/pkp4.png");
 	margin-bottom: 2em;
 }

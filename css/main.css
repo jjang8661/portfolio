@@ -8,7 +8,7 @@ body {
 	font-family: "Helvetica Neue", "Helvetica", sans-serif;
 	font-size: 18px;
 	font-weight: 305;
-	background-color:#f0f0f0;
+	background-color:white;
 }
 
 .contents {
@@ -21,24 +21,30 @@ body {
 	width: 85%;
 }
 
+.imgBox {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #img1{
-	background-image: url("/images/p1/moudaMain.png");
+	background-image: url("../images/p1/moudaMain.png");
 }
 
 #img2{
-	background-image: url("/images/p2/haven_thumb.png");
+	background-image: url("../images/p2/haven_thumb.png");
 }
 
 #img3{
-	background-image: url("/images/p3/app_thumb.png");
+	background-image: url("../images/p3/app_thumb.png");
 }
 
 #img4{
-	background-image: url("/images/p4/pkp_thumb.png");
+	background-image: url("../images/p4/pkp_thumb.png");
 }
 
 #img5{
-	background-image: url("/images/p5/graphic_thumb.png");
+	background-image: url("../images/p5/graphic_thumb.png");
 }
 
 .firstImg {
@@ -49,11 +55,8 @@ body {
 .skillBox{
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
-    min-height: 300px;
-    margin-top: 1em;
-    padding-top: 0px;
-    margin-left: 1.5em;
-    margin-right: 1.5em;
+    width: 25%;
+    margin-left: 6%;
 }
 
 #graphic{
@@ -87,6 +90,8 @@ footer {
 	color: white;
 	margin-top: 2em;
 	text-align: center;
+	position: relative;
+	bottom:0px;
 }
 
 
@@ -147,14 +152,21 @@ hr {
 	padding-left: 15em;
 	padding-right: 15em;
 }
+
+.container-fluid{
+	margin-bottom: 5em;
+}
+
 .picBox {
 	text-align: center;
 	width: 100%;
 	height: 100%;
-	padding-left: 1.5em;
-	padding-right: 1em;
-
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	padding: auto;
 }
+
 
 .pictures {
 	width: 400px;
@@ -209,6 +221,13 @@ hr {
 	animation: 10.3s fadeIn;
 	visibility: visible;
 	display: block;
+}
+
+.subHead {
+	font-family: 'Rock Salt', cursive !important;
+	font-size: 30px;
+	text-align: center;
+	margin: 1em;
 }
 
 @keyframes fadeIn {
@@ -420,8 +439,4 @@ a.btn:visited, as.btn:link {
 	padding-bottom: 3%;
 	background-color: #f0efeb !important;
 
-}
-
-#works {
-/*	background-color:#fdf9f8;*/
 }
