@@ -8,7 +8,7 @@ body {
 	font-family: "Helvetica Neue", "Helvetica", sans-serif;
 	font-size: 18px;
 	font-weight: 305;
-	background-color: #f0f0f0;
+	background-color: white;
 }
 
 .contents {
@@ -207,19 +207,34 @@ hr {
 }
 
 #headTextMain {
-	margin-top: 12%;
+	margin-top: 25%;
 	top:0;
 	position: absolute;
 	font-size: 100px;
 	left: auto;
 	right: auto;
 	width: 100%;
-	padding-right: 18%;
+	padding-right: 20%;
 	text-align: right;
 	font-family: 'Rock Salt', cursive;
-	animation: 10.3s fadeIn;
+	animation: 9.5s fadeIn;
 	visibility: visible;
-	display: block;
+}
+
+#headTextSub {
+	margin-top: 38%;
+	top:0;
+	position: absolute;
+	font-size: 20px;
+	left: auto;
+	right: auto;
+	width: 100%;
+	padding-right: 20%;
+	text-align: right;
+	font-family: 'Rock Salt', cursive;
+	animation: 10s fadeIn;
+	color:#731d48;
+	visibility: visible;
 }
 
 .subHead {
