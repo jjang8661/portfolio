@@ -1,6 +1,6 @@
  <!-- Your home page goes here -->
 <!DOCTYPE html>
-<html lang="en" ng-app="CoffeeApp">
+<html lang="en" ng-app="MainApp">
 	<head>
 		<meta charset = "UTF-8">
 		<meta name"viewport" content="width=device-width, initial-scale=1">
@@ -9,16 +9,14 @@
 
     <link rel="stylesheet" href="css/lightbox.css">
 		<link rel="stylesheet" href="css/main.css"/>
+    <link rel="stylesheet" href="css/partialImg.css"/>
 		<link rel="icon" href="images/ws.png"/>
 
     <!-- Libraries -->
     <script src="https://code.jquery.com/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-
-
-    <!-- load main javascript -->
-    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
 
     </head>
 
@@ -26,74 +24,34 @@
       <nav class="navbar-fixed-top m1 menu">
         <div id="menu-center">
          <ul list-unstyled list-inline>
-           <li><a id="navHome" href="#header"><img src="images/ws.png"/></a></li>
-           <li><a id="navProb" href="#skills">Skills</a></li>
-           <li><a id="navIdea" href="#works">Featured Works</a></li>
-           <li><a id="navProto" href="#contact">Contact</a></li>
+           <li id="navLogo"><a id="navHome" ui-sref="home"><img src="images/ws.png"/></a></li>
+           <li><a href="mailto:seow@uw.edu">seow@uw.edu</a> | <a href="tel:206-310-9264">206-310-9264</a></li>
+           <li class="navRight"><a id="navProto" ui-sref="profile">About</a></li>
+           <li class="navRight"><a id="navIdea" ui-sref="home">Portfolio</a></li>
          </ul>
         </div>
       </nav> 
-    
-      <div id="header">
-        <h2 id="headText">Design for designated people</h2>
-      </div>  
-
-      <section id="skills" class="container-fluid">
-        <h2>Skills</h2>
-            <div class="picBox">
-              <div class="col-md-3 skillBox">
-                <img class="imgBox firstImg" src="/images/graphic0.png" alt="coding img">
-                <img class="imgBox" src="/images/graphic1.png" alt="coding img">
-                <img class="imgBox" src="/images/graphic2.png" alt="coding img">
-              </div>
-              <div class="col-md-3 skillBox">
-                <img class="imgBox firstImg" src="/images/prototype0.png" alt="coding img">
-                <img class="imgBox" src="/images/prototype1.png" alt="coding img">
-                <img class="imgBox" src="/images/prototype2.png" alt="coding img">
-              </div>
-              <div class="col-md-3 skillBox">
-                <img class="imgBox firstImg" src="/images/coding0.png" alt="coding img">
-                <img class="imgBox" src="/images/coding1.png" alt="coding img">
-                <img class="imgBox" src="/images/coding2.png" alt="coding img">
-                <img class="imgBox" src="/images/coding3.png" alt="coding img">
-              </div>
-            </div>
-      </section>
-
-      <section id="works" class="container-fluid diffDiv">
-        <h2>Featured Works</h2>
-        <div class="picBox">
-          <div class="cold-mid-4">
-            <a href="images/meeting.jpg" data-lightbox="workImg" data-title="Images for featured works"><img class="onePic" src="images/meeting.jpg" alt="At group meeting"/></a>
-          </div>
-          <div class="cold-mid-4">
-            <a href="images/meeting.jpg" data-lightbox="workImg" data-title="At group meeting"><img class="onePic" src="images/meeting.jpg" alt="At group meeting"/></a>
-          </div>
-      </section>
-
-      <section id="contact" class="container-fluid diffDiv">
-        <h2>Contact</h2>
-
-        <div class="col-md-6">
-          <h4>WOOSUK SEO</h4>
-          <a href="images/woosuk.jpg" data-lightbox="profile" data-title="Woosuk Seo"><div class="profilePic" style = 'background-image: url(images/woosuk.jpg)'></div></a>
-        </div>
-        <div class="col-md-6">
-            <p class="caption"></p>
-            <ul>
-              <li><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i><a href="https://www.linkedin.com/in/woosuk-seo-b7aa75109?trk=hp-identity-name" target="_blank">Woosuk Seo</a></li>
-              <li><i class="fa fa-mobile fa-3x" aria-hidden="true"></i><a href="tel:206-310-9264">206-310-9264</a></li>
-              <li><i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i><a href="mailto:seow@uw.edu">seow@uw.edu</a></li>
-            </ul>
-        </div>
-      </section>      
+      
+      <main>
+        <div ui-view autoscroll='true'></div>
+      <main>
 
       <footer class="container-fluid">
-        <p class="col-sm-3">By Woosuk Seo</p>
+        <p>Designed and built by Woosuk Seo. &copy;2017</p>
       </footer>
+
+      <!-- External libraries -->
+      <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-sanitize.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+      <script src="lib/ui-bootstrap-tpls-0.14.3.min.js"></script>
 
       <!-- light box script -->
       <script src="js/lightbox.js"></script>
+
+      <!-- load main javascript -->
+      <script src="js/app.js"></script>
+      <script src="js/main.js"></script>
+
 
     </body>
 </html>
