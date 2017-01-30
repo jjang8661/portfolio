@@ -49,7 +49,8 @@ angular.module('MainApp', ['ngSanitize', 'ui.router','ui.bootstrap'])
 
 })
 
-
-
+	$rootScope.$on('$stateChangeSuccess', function() {
+   document.body.scrollTop = document.documentElement.scrollTop = 0;
+});
 
 
