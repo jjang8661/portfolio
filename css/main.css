@@ -54,6 +54,9 @@ body {
 }
 
 #profileSection {
+	height: 80vh;
+	padding-top: 1.5em;
+	margin-bottom: 0 !important;
 	background-color: steelblue;
 }
 
