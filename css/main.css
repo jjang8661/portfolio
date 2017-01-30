@@ -150,13 +150,16 @@ body {
 
 footer {
 	background-color: #989898;
-    clear: right;
 	font-size: 12px;
 	padding: 1em;
 	color: white;
 	text-align: center;
 	position: relative;
 	bottom:0px;
+}
+
+footer>p {
+	margin:0px;
 }
 
 
