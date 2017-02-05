@@ -13,32 +13,38 @@ angular.module('MainApp', ['ngSanitize', 'ui.router','ui.bootstrap'])
 
 		.state('profile', {
 			url: '/profile', 
-			templateUrl: 'partials/profile.html'
+			templateUrl: 'partials/profile.html',
+			onEnter: scrollContent
 		})
 
 		.state('p1', {
 			url: '/p1',
-			templateUrl: 'partials/p1.html'
+			templateUrl: 'partials/p1.html',
+			onEnter: scrollContent
 		})
 
 		.state('p2', {
 			url: '/p2',
-			templateUrl: 'partials/p2.html'
+			templateUrl: 'partials/p2.html',
+			onEnter: scrollContent
 		})
 
 		.state('p3', {
 			url: '/p3',
-			templateUrl: 'partials/p3.html'
+			templateUrl: 'partials/p3.html',
+			onEnter: scrollContent
 		})
 
 		.state('p4', {
 			url: '/p4',
-			templateUrl: 'partials/p4.html'
+			templateUrl: 'partials/p4.html',
+			onEnter: scrollContent
 		})
 
 		.state('p5', {
 			url: '/p5',
-			templateUrl: 'partials/p5.html'
+			templateUrl: 'partials/p5.html',
+			onEnter: scrollContent
 		})
 
 		.state('p6', {
@@ -49,8 +55,6 @@ angular.module('MainApp', ['ngSanitize', 'ui.router','ui.bootstrap'])
 
 })
 
-	$rootScope.$on('$stateChangeSuccess', function() {
+var scrollContent = function() {
    document.body.scrollTop = document.documentElement.scrollTop = 0;
-});
-
-
+};

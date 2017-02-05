@@ -2,46 +2,72 @@
 
 @import url("https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css");
-@import url('https://fonts.googleapis.com/css?family=Kalam');
+@import url('https://fonts.googleapis.com/css?family=Caveat');
 
 body {
 	font-family: "Helvetica Neue", "Helvetica", sans-serif;
 	font-size: 18px;
-	font-weight: 305;
 	background-color: white;
 }
 
 .quoteSection{
-	padding-top: 15%;
-	height: 550px;
-	background-image: url("../images/quote_bg.jpg");
-	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-attachment: fixed;
+	padding-top: 5vh;
+	height: 150px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+ 	text-align: left;
+	position:relative;
+	margin-bottom: 3em;
+}
+
+.quoteContent{
+	font-weight: 500;
+	font-size: 40px;
+	width: 50%;
+	display: inline-block;
+}
+
+.quoteBy{
+	font-size: 18px;
+	color: #989898;
+	font-weight: 300;
+}
+
+.quoteSub{
+	width:40%;
+	margin-top: 10%;
+	display: inline-block;
+ 	text-align: right;
+ 	float: right;
+ 	opacity: 0.5;
+}
+
+.nameSection{
+	padding-top: 4vh;
+	height: 180px;
 	text-align: center;
 	position:relative;
 }
 
-.quoteContent{
-	font-family: 'Kalam', cursive;
+.nameContent{
 	font-weight: 500;
 	font-size: 50px;
 }
 
-.quoteBy{
-	font-family: 'Kalam', cursive;
-	font-size: 30px;
+.nameSub{
+	font-size: 20px;
+	color: #989898;
 }
 
 .homeSections {
 	height: 90vh;
 	padding-top: 1.5em;
 	margin-bottom: 0 !important;
-	background-color: rgba(255, 255, 228,0.8);
 }
 
 #workSection{
-	background-color: rgba(255, 255, 228,0.8);
+	height: 100% !important;
 }
 
 #imgEmpty{
@@ -49,36 +75,35 @@ body {
 	box-shadow: none !important;
 }
 
-#skillSection{
-
-}
-
 #profileSection {
-	height: 80vh;
-	padding-top: 1.5em;
+	height: 100%;
 	margin-bottom: 0 !important;
-	background-color: steelblue;
+	padding-bottom: 3em;
 }
 
 
-.profilePic {
-	margin-left: 17.5em;
-	margin-right: 2em;
+#profilePic {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3em;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
-    background-position: 50%;
-    border-radius: 50%;
-    width: 200px;
-    height: 240px;
+   	background-image: url("../images/woosuk.jpg");
+    width: 60%;
+    height: 500px;
+    margin-bottom: 2em;
 }
 
 #profileText {
-	width: 500px;
-	color:white;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	color: black;
+	margin-bottom: 2em;
 }
 
 #profileText a:link, #profileText a:visited {
-	color: white;
+	color: rgba(128,18,75,0.8);
 	text-decoration: none;
 	font-weight: 500;
 }
@@ -86,15 +111,21 @@ body {
 #profileText a:hover {
 	color: rgba(128,18,75,1);
 }
-.contents {
-	margin-top: 2em;	
+
+#profileMsg{
+	width: 60%;
+	font-size: 50px;
+	text-align: center;
+	color: black;
+	opacity: 0.5;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 10px;
+	font-family: 'Caveat', cursive;
 }
 
-.boxRow {
-	margin-left: auto;
-	margin-right: auto; 
-	width: 85%;
-	height: 100%;
+.contents {
+	margin-top: 2em;	
 }
 
 .imgBox {
@@ -132,7 +163,10 @@ body {
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
     width: 25%;
-    margin-left: 6%;
+}
+
+.skillBox:nth-child(1){
+	margin-left: 12%;
 }
 
 #graphic{
@@ -149,18 +183,26 @@ body {
 
 
 footer {
-	background-color: #989898;
-	font-size: 12px;
+	font-size: 16px;
 	padding: 1em;
-	color: white;
 	text-align: center;
 	position: relative;
 	bottom:0px;
+	color: rgba(128,18,75,0.8);
 }
 
 footer>p {
 	margin:0px;
+	color: black;
+	opacity: 0.5;
 }
+
+footer a:visited, footer a:link {
+	color: rgba(128,18,75,0.8);
+	margin-left: 0.5em;
+	margin-right: 0.5em;
+}
+
 
 
 h1, h2, h3{
@@ -176,7 +218,8 @@ h2{
 
 hr {
 	border-color: #731d48;
-	margin: 30px;
+	margin-left: 4em;
+	margin-right: 4em;
 }
 
 .titleImg {
@@ -228,13 +271,18 @@ hr {
 .picBox {
 	text-align: center;
 	width: 90vw;
-	height: 100%;
 	margin-top: 2em;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
 }
 
+.picBoxMini {
+	width: 80%;
+	height: 250px;
+	margin-left: auto;
+	margin-right: auto;
+}
 
 .pictures {
 	width: 400px;
@@ -253,52 +301,46 @@ hr {
 }
 
 #header {
-	background-image: url("../images/portfolio_bg.jpg");
+/*	background-image: url("../images/portfolio_bg.jpg");
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
     height: 650px;
     width: 100%;
     margin-top: 0px;
     padding-top: 0px;
-    position: relative;
+    position: relative;*/
 }
 
 #btnBox{
-	position: absolute;
-	width: 40vw;
-	top: 70vh;
-	left: 32vw
-}
-
-#btnBox2{
-	margin-top: 2em;
-	width: 40vw;
+	width: 40%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .mainBtn {
-	border: 3px white solid;
+	border: 3px rgba(128,18,75,0.8) solid;
 	font-size: 20px;
 	font-weight: 400;
-	color: white;
 	cursor:auto;
 	padding: 0.5em;
 	padding-left: 1.5em;
 	padding-right:1.5em;
 	text-align: center;
-}
-
-.mainBtn:nth-child(2){
 	margin-left: 2em;
 }
 
+.mainBtn:nth-child(1){
+	margin-left: 5em;
+}
+
 .mainBtn:visited, .mainBtn:link {
-	color: white;
+	color: rgba(128,18,75,0.8);
 	text-decoration: none;
 }
 
 .mainBtn:hover {
-	color: #989898;
-	background-color: white;
+	color: white;
+	background-color: rgba(128,18,75,0.8);
 }
 
 #headText {
@@ -389,8 +431,8 @@ hr {
 	text-align: center;
 /*    width: 300px;
     height: 200px;*/
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     margin-top: 1em;
     margin-left: 0.5em;
     margin-right: 0.5em;
@@ -401,12 +443,13 @@ hr {
 	background-position: center;
 }
 
-.image-container:nth-child(1) {
-	margin-left: 5em;
+.image-container:nth-child(odd) {
+	margin-left: 7vw;
 }
 
-.image-container:nth-child(4) {
-	margin-left: 5em;
+.image-container:nth-child(even) {
+	margin-left: 2em;
+	margin-bottom: 1em;
 }
 
 .image-container .after {
@@ -424,10 +467,10 @@ hr {
 }
 
 .after p {
-	padding-top: 2.5em;
+	padding-top: 2.3em;
 	font-weight: 900px;
 	font-family: Arial; 
-	font-size: 30px;
+	font-size: 40px;
     z-index: 9999;
 }
 
@@ -479,12 +522,24 @@ hr {
 	text-align: center;
 }
 
+.current {
+    border-bottom: 2px solid rgba(128,18,75,0.8);
+}
+
 nav {
     font-size: 16px;
-    position: fixed;
     z-index: 999;
     min-height: 20px;
     width: 100%;
+    background-color: transparent;
+    margin-top: 2em;
+}
+
+.navbar {
+	margin-bottom:0;
+	width: 68%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 nav li {
@@ -496,8 +551,7 @@ nav li {
 
 .navLine {
 	color: black;
-	background-color: rgba(255,255,255,0.8);
-	border-bottom: 2px solid rgba(128,18,75,1);
+	background-color: rgba(255, 255, 228,0.8);
 	box-shadow: 2px 2px 5px #888888;
 	transition: background-color 1s ease;
 }
@@ -544,17 +598,85 @@ a.active:link, a.active:visited {
 
 .btn {
 	margin-top: 1em;
-	background-color: #731d48;
+	border: 3px rgba(128,18,75,0.8) solid;
+	font-size: 20px;
+	font-weight: 400;
+	cursor:auto;
+	padding: 0.5em;
+	padding-left: 1.5em;
+	padding-right:1.5em;
+	text-align: center;
+	margin-left: 2em;
+	background-color: transparent;
+}
+
+
+.btn:visited, .btn:link {
+	color: rgba(128,18,75,0.8);
+	text-decoration: none;
 }
 
 .btn:hover {
-	background-color: #731d48;
-	opacity: .8;
+	background-color: rgba(128,18,75,0.8);
+	color: white;
 }
 
-a.btn:visited, as.btn:link {
-	background-color: #731d48 !important;
+.floatingRight{
+	position: fixed;
+	top: 50%;
+	left: 95%;
+	z-index:9999;
 }
+
+.floatingRight .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    right: 105%; 
+}
+
+.floatingRight:hover .tooltiptext {
+    visibility: visible;
+    background-color: rgba(128,18,75,0.8);
+}
+
+.floatingLeft{
+	position: fixed;
+	top: 50%;
+	right: 95%;
+	z-index:9999;
+}
+
+.floatingLeft .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 105%; 
+}
+
+.floatingLeft:hover .tooltiptext {
+    visibility: visible;
+    background-color: rgba(128,18,75,0.8);
+}
+
 
 .partials {
 	-webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
@@ -564,6 +686,4 @@ a.btn:visited, as.btn:link {
     animation: fadein 1s;
 	overflow: auto;
 	padding-bottom: 3%;
-	background-color: #f0efeb !important;
-
 }

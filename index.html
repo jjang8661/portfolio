@@ -21,14 +21,12 @@
     </head>
 
     <body id="home">
-      <nav class="navbar-fixed-top m1 menu">
+      <nav class="navbar m1 menu">
         <div id="menu-center">
          <ul list-unstyled list-inline>
            <li id="navLogo"><a id="navHome" ui-sref="home"><img src="images/ws.png"/></a></li>
-           <li><a href="mailto:seow@uw.edu">seow@uw.edu</a> | <a href="tel:206-310-9264">206-310-9264</a></li>
-           <li class="navRight"><a href="#/#profileSection">About</a></li>
-           <li class="navRight"><a href="#/#skillSection">Skills</a></li>
-           <li class="navRight"><a href="#/#workSection">Portfolio</a></li>
+           <li class="navRight"><a ui-sref="profile" ui-sref-active="current">About</a></li>
+           <li class="navRight"><a ui-sref="home" ui-sref-active="current">Featured Works</a></li>
          </ul>
         </div>
       </nav> 
@@ -38,6 +36,8 @@
       <main>
 
       <footer>
+        <div class="footerText"><a href="mailto:seow@uw.edu">seow@uw.edu</a>   |   <a href="tel:206-310-9264">206-310-9264</a>   |   <a href="pdf/resume.pdf" target="_blank">Resume</a>   |   <a href="https://www.linkedin.com/in/woosuk-seo-b7aa75109" target="_blank">LinkedIn</a></div>
+        <hr>
         <p>Designed and built by Woosuk Seo. &copy;2017</p>
       </footer>
 
