@@ -47,9 +47,9 @@ angular.module('MainApp', ['ngSanitize', 'ui.router','ui.bootstrap'])
 			onEnter: scrollContent
 		})
 
-		.state('p6', {
-			url: '/p6',
-			templateUrl: 'partials/p6.html'
+		.state('harmony', {
+			url: '/harmony',
+			templateUrl: 'partials/harmony.html'
 		})
 	$urlRouterProvider.otherwise('/');
 
